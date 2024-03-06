@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Challenge</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="card-container">
+        <div class="card">
+            <img src="panpan.jpg" alt="Panda">
+            <h2>Panda Bear</h2>
+            <p>Description</p>
+        </div>
+        <div class="card">
+            <img src="griz.jpg" alt="Grizzly Bear">
+            <h2>Grizzly Bear</h2>
+            <p>Description</p>
+        </div>
+        <div class="card">
+            <img src="icebear.jpg" alt="Ice Bear">
+            <h2>Ice Bear</h2>
+            <p>Description</p>
+        </div>
+        <div class="card">
+            <img src="chloe.jpg" alt="chloe">
+            <h2>Chloe 4</h2>
+            <p>Description</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Lavarias, Alexander F. & Manginga, Reese S.</p>
+        <p>&copy; 2024 CC14 Lab Act 7: Flexbox </p>
+    </footer>
+</body>
+
+<style>
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b1c5e3;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.card-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 20px;
+    flex:  20%;
+    border-radius: 30px;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+
+
+</style>
+
+</html>
